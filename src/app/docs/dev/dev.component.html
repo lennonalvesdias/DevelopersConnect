@@ -1,0 +1,27 @@
+<header class="site-header navbar-fullwidth navbar-transparent">
+    <app-header></app-header>
+    <app-banner-mini></app-banner-mini>
+</header>
+
+<main class="container">
+    <div class="row">
+
+        <article class="col-md-12 col-sm-12 main-content" role="main">
+
+            <header>
+                <h1>Documentações para Desenvolvedores</h1>
+            </header>
+
+            <section>
+                <h2 id="dropshipping">Dropshipping</h2>
+                <a [routerLink]="['/dropshipping']" [queryParams]="{canal: 'dev', cap: 'descricao'}">Acessar documentação.</a>
+            </section>
+
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

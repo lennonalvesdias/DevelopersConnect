@@ -1,0 +1,31 @@
+<header class="site-header navbar-fullwidth navbar-transparent">
+    <app-header></app-header>
+    <app-banner-mini></app-banner-mini>
+</header>
+
+<main class="container">
+    <div class="row">
+
+        <app-menu-drop></app-menu-drop>
+
+        <article class="col-md-9 col-sm-9 main-content" role="main">
+
+            <section *ngIf="canal == 'empresa'" >
+                <div *ngIf="capitulo == 'descricao'"  markdown-to-html [src]="'https://raw.githubusercontent.com/heltonrodrigues/dropshipping/master/README.md'"></div>
+            </section>
+
+            <section *ngIf="canal == 'dev'" >
+                <div *ngIf="capitulo == 'descricao'"  markdown-to-html [src]="'https://raw.githubusercontent.com/heltonrodrigues/dropshipping/master/README.md'"></div>
+                <div *ngIf="capitulo == 'integracao'"  markdown-to-html [src]="'https://raw.githubusercontent.com/heltonrodrigues/dropshipping/master/chapter1.md'"></div>
+            </section>
+
+        <p class="text-right"><a (click)="irAoTopo()"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></a></p>
+
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

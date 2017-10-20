@@ -1,0 +1,38 @@
+<header class="site-header navbar-fullwidth navbar-transparent">
+    <app-header></app-header>
+    <app-banner-mini></app-banner-mini>
+</header>
+
+<main class="container">
+    <div class="row">
+
+        <article class="col-md-12 col-sm-12 main-content" role="main">
+
+            <header>
+                <h1>Documentações para Empresas</h1>
+                <!--<p><strong>Dropshipping</strong> is a html online documentation template which can help you rapidly develop your next
+                    software's documentation. It can be used for documenting API, frameworks, plugins, templates, etc. It's
+                    based on Bootstrap and contains a lot of components to easily make your interactive documentation.</p>
+                <p>-->
+            </header>
+
+            <section>
+                <h2 id="dropshipping">Dropshipping</h2>
+                <a [routerLink]="['/dropshipping']" [queryParams]="{canal: 'empresa', cap: 'descricao'}">Acessar documentação.</a>
+                <br/>
+                <a href="./../../../assets/pdf/ApresentacaoDropshipping.pdf" target="_blank">Baixar apresentação.</a>
+            </section>
+
+            <!--<section>
+                <h2 id="mktplace">MarketPlace</h2>
+                <a routerLink="documentacoes/#!/doc/marketplace">Acessar documentação.</a>
+            </section>-->
+
+        </article>
+
+    </div>
+</main>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

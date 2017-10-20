@@ -1,0 +1,25 @@
+<aside class="col-md-3 col-sm-3 sidebar">
+
+    <!--<li>
+        <a routerLink="documentacoes/#!/sigeco#admin">TI / Admin</a>
+        <ul>
+            <li><a routerLink="documentacoes/#!/sigeco#admin_integracoes">Integrações</a></li>
+            <li><a routerLink="documentacoes/#!/sigeco#admin_projetos">Projetos</a></li>
+            <li><a routerLink="documentacoes/#!/sigeco#admin_usuarios">Usuários</a></li>
+        </ul>
+    </li>-->
+
+    <ul class="sidenav dropable sticky" *ngIf="canal == 'empresa'">
+        <li>• Dropshipping</li>
+        <li><a class="active" [routerLink]="['/dropshipping']" [queryParams]="{canal: canal, cap: 'descricao'}">Descrição</a></li>
+    </ul>
+
+    <ul class="sidenav dropable sticky" *ngIf="canal == 'dev'">
+        <li>• Dropshipping</li>
+        <li><a class="active" [routerLink]="['/dropshipping']" [queryParams]="{canal: canal, cap: 'descricao'}">Descrição</a></li>
+
+        <li>• Informações Técnicas</li>
+        <li><a class="active" [routerLink]="['/dropshipping']" [queryParams]="{canal: canal, cap: 'integracao'}">Integrações</a></li>
+    </ul>
+
+</aside>
